@@ -1,0 +1,19 @@
+Index: src/components/Header/HeaderContainer.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Header from \"./Header\";\r\nimport React from \"react\";\r\nimport axios from \"axios\";\r\n\r\nclass HeaderContainer extends React.Component {\r\n    componentDidMount() {\r\n        axios.get(`https://social-network.samuraijs.com/api/1.0/auth/me`, {\r\n            withCredentials: true\r\n        })\r\n            .then(response => {\r\n                if (response.data.resultCode ===0) {\r\n                    let {id, login, email} = response.data.data;\r\n                    this.props.setAuthUserData(id, email, login);\r\n                }\r\n\r\n            });\r\n    }\r\n\r\n    render() {\r\n        return <Header {...this.props} />\r\n    }\r\n}\r\nconst mapStateToProps = (state) => ({\r\n    isAuth: state.auth.isAuth,\r\n    login: state.auth.login,\r\n})\r\nexport default HeaderContainer;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Header/HeaderContainer.jsx b/src/components/Header/HeaderContainer.jsx
+--- a/src/components/Header/HeaderContainer.jsx	(revision 8efe8a66ab307a3a3a55fa2fd10b7f801fe543af)
++++ b/src/components/Header/HeaderContainer.jsx	(date 1640021304964)
+@@ -10,7 +10,7 @@
+             .then(response => {
+                 if (response.data.resultCode ===0) {
+                     let {id, login, email} = response.data.data;
+-                    this.props.setAuthUserData(id, email, login);
++                    props.setAuthUserData(id, email, login);
+                 }
+ 
+             });

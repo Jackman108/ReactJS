@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="54573fb4-319b-433f-960e-23560166e490" name="Default Changelist" comment="60lesson" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="60lesson" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="ProjectId" id="1x0MgfPs4Ztq3nVPvs9orUcrXth" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.7" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src\components\Users" />
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src\redux" />
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src\components\Dialogs" />
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src\components\Profile\MyPosts" />
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src\components\Dialogs\Dialogitem" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src\components\Users" />
+      <recent name="C:\Users\jivat\Documents\React\01\kamasutra\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54573fb4-319b-433f-960e-23560166e490" name="Default Changelist" comment="" />
+      <created>1629487665473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629487665473</updated>
+      <workItem from="1629487668446" duration="6562000" />
+      <workItem from="1629787275271" duration="2763000" />
+      <workItem from="1629807627831" duration="1576000" />
+      <workItem from="1629812825635" duration="13939000" />
+      <workItem from="1630312416816" duration="4257000" />
+      <workItem from="1630432717448" duration="9031000" />
+      <workItem from="1630511528174" duration="17070000" />
+      <workItem from="1630564973732" duration="5547000" />
+      <workItem from="1630690555939" duration="8948000" />
+      <workItem from="1631027930759" duration="593000" />
+      <workItem from="1632468045202" duration="1616000" />
+      <workItem from="1632566853972" duration="7554000" />
+      <workItem from="1632591994605" duration="1994000" />
+      <workItem from="1632594029144" duration="1102000" />
+      <workItem from="1632766326625" duration="6577000" />
+      <workItem from="1634401946257" duration="5813000" />
+      <workItem from="1634586846191" duration="6230000" />
+      <workItem from="1634668527740" duration="7397000" />
+      <workItem from="1634842279019" duration="5870000" />
+      <workItem from="1635003012455" duration="733000" />
+      <workItem from="1635413752817" duration="2824000" />
+      <workItem from="1635605357735" duration="593000" />
+      <workItem from="1635801752180" duration="6838000" />
+      <workItem from="1635809029031" duration="941000" />
+      <workItem from="1635809994610" duration="20000" />
+      <workItem from="1635810021805" duration="779000" />
+      <workItem from="1635970654323" duration="2683000" />
+      <workItem from="1635973379402" duration="1248000" />
+      <workItem from="1635975480090" duration="3520000" />
+      <workItem from="1637082690917" duration="10395000" />
+      <workItem from="1639512691553" duration="9290000" />
+      <workItem from="1639758305271" duration="1989000" />
+      <workItem from="1639763587147" duration="8124000" />
+      <workItem from="1639940946057" duration="9013000" />
+      <workItem from="1640011952255" duration="5132000" />
+      <workItem from="1640021176385" duration="961000" />
+      <workItem from="1640022692951" duration="62000" />
+    </task>
+    <task id="LOCAL-00001" summary="60lesson">
+      <created>1640012453217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640012453217</updated>
+    </task>
+    <task id="LOCAL-00002" summary="60lesson">
+      <created>1640013108689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640013108689</updated>
+    </task>
+    <task id="LOCAL-00003" summary="60lesson">
+      <created>1640013419123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640013419123</updated>
+    </task>
+    <task id="LOCAL-00004" summary="60lesson">
+      <created>1640013432941</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640013432941</updated>
+    </task>
+    <task id="LOCAL-00005" summary="60lesson">
+      <created>1640013914259</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640013914259</updated>
+    </task>
+    <task id="LOCAL-00006" summary="60lesson">
+      <created>1640014204803</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640014204803</updated>
+    </task>
+    <task id="LOCAL-00007" summary="60lesson">
+      <created>1640014499817</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640014499817</updated>
+    </task>
+    <task id="LOCAL-00008" summary="60lesson">
+      <created>1640016191344</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640016191345</updated>
+    </task>
+    <task id="LOCAL-00009" summary="60lesson">
+      <created>1640016203362</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640016203362</updated>
+    </task>
+    <task id="LOCAL-00010" summary="60lesson">
+      <created>1640016734325</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640016734325</updated>
+    </task>
+    <task id="LOCAL-00011" summary="60lesson">
+      <created>1640021353957</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640021353957</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="includedJSSourcePackages">
+      <set>
+        <option value="react-scripts" />
+      </set>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="yff" />
+    <MESSAGE value="60lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="60lesson" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
