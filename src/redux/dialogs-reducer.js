@@ -1,51 +1,46 @@
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const SET_USER_PROFILE = 'SET_USER_PROFILE';
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
+const SEND_MESSAGE = 'SEND_MESSAGE';
 
 let initialState = {
-    posts: [
-        {id: 1, message: 'Hi, how are you?', likesCount: 12},
-        {id: 2, message: 'It\'s my first post', likesCount: 11},
-        {id: 3, message: 'Blabla', likesCount: 11},
-        {id: 4, message: 'Dada', likesCount: 11}
+    dialogs: [
+        {id: 1, name: 'Dimych'},
+        {id: 2, name: 'Andrew'},
+        {id: 3, name: 'Sveta'},
+        {id: 4, name: 'Sasha'},
+        {id: 5, name: 'Viktor'},
+        {id: 6, name: 'Valera'}
     ],
-    newPostText: 'it-kamasutra.com',
-    profile: null
+    messages: [
+        {id: 1, message: 'Hi'},
+        {id: 2, message: 'How is your it-kamasutra?'},
+        {id: 3, message: 'Yo'},
+        {id: 4, message: 'Yo'},
+        {id: 5, message: 'Yo'}
+    ],
+    newMessageBody: ""
 };
 
-const profileReducer = (state = initialState, action) => {
-
-    switch(action.type) {
-        case ADD_POST: {
-            let newPost = {
-                id: 5,
-                message: state.newPostText,
-                likesCount: 0
-            };
+const dialogsReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case UPDATE_NEW_MESSAGE_BODY:
             return {
                 ...state,
-                posts: [...state.posts, newPost],
-                newPostText: ''
+                newMessageBody: action.body
             };
-        }
-        case UPDATE_NEW_POST_TEXT: {
+        case SEND_MESSAGE:
+            let body = state.newMessageBody;
             return {
                 ...state,
-                newPostText: action.newText
-            }
-        }
-        case SET_USER_PROFILE: {
-            return {...state, profile: action.profile}
-        }
+                newMessageBody: '',
+                messages: [...state.messages, {id: 6, message: body}]
+            };
         default:
             return state;
     }
 }
 
+export const sendMessageCreator = () => ({type: SEND_MESSAGE})
+export const updateNewMessageBodyCreator = (body) =>
+    ({type: UPDATE_NEW_MESSAGE_BODY, body: body})
 
-export const addPostActionCreator = () => ({type: ADD_POST})
-export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
-export const updateNewPostTextActionCreator = (text) =>
-    ({type: UPDATE_NEW_POST_TEXT, newText: text })
-
-export default profileReducer;
+export default dialogsReducer;
