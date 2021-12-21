@@ -1,13 +1,10 @@
-export default DialogItem;import React from 'react';
-import s from './../Dialogs.module.css';
-import {NavLink} from "react-router-dom";
+import React from 'react';
+import preloader from "../../../assets/images/preloader.svg";
 
-const DialogItem = (props) => {
-    let path = "/dialogs/" + props.id;
-
-    return <div className={s.dialog + ' ' + s.active}>
-        <NavLink to={path}>{props.name}</NavLink>
+let Preloader = (props) => {
+    return <div  style={ { backgroundColor: 'white' } }>
+        <img src={preloader} />
     </div>
 }
 
-export default DialogItem;
+export default Preloader;
