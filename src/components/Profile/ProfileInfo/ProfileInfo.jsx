@@ -2,20 +2,20 @@ import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 
-const ProfileInfo = (props) => {
+const ProfileInfo = (props, style = style) => {
     if (!props.profile) {
         return <Preloader />
     }
 
     return (
         <div>
-            <div>
+            <div className={style}>
                 <img
-                    src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350'/>
+                    src='https://razzmatazzfilms.com/blog/wp-content/uploads/2016/12/Professional-Video-Production-Companyin-Delhi-NCR.jpg' alt='Header'/>
             </div>
             <div className={s.descriptionBlock}>
-                <img src={props.profile.photos.large} />
-                ava + description
+                <img src={props.profile.photos.large} alt='logo'/>
+                 ava + description
             </div>
         </div>
     )
