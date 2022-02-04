@@ -2,8 +2,18 @@ import React from 'react';
 import Profile from "./Profile";
 import {connect} from "react-redux";
 import {getStatus, getUserProfile, updateStatus} from "../../redux/profile-reducer";
-import {withRouter} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {compose} from "redux";
+
+const withRouter = WrappedComponent => props => {
+
+    const params = useParams();
+    return (
+        <WrappedComponent{...props} params={params} />
+    );
+};
+
+
 
 class ProfileContainer extends React.Component {
 
@@ -29,10 +39,11 @@ let mapStateToProps = (state) => ({
     status: state.profilePage.status
 });
 
+
+let WithUrlDataContainerComponent = withRouter(ProfileContainer);
 export default compose(
     connect(mapStateToProps, {getUserProfile, getStatus, updateStatus}),
     withRouter,
     // withAuthRedirect
-)(ProfileContainer);
-
+)(WithUrlDataContainerComponent);
 
