@@ -13,39 +13,39 @@ import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 
 class App extends Component {
-componentDidMount() {
-    this.props.initializeApp();
-}
-
-render() {
-    if(!this.props.initialized) {
-        return <Preloader />
+    componentDidMount() {
+        this.props.initializeApp();
     }
 
-    return (
-        <div className='app-wrapper'>
+    render() {
+        if (!this.props.initialized) {
+            return <Preloader/>
+        }
 
-            <HeaderContainer />
-            <Navbar />
-            <div className='app-wrapper-content'>
-                <Route path='/dialogs'
-                       render={() => <DialogsContainer /> }/>
+        return (
+            <div className='app-wrapper'>
+                <HeaderContainer/>
+                <Navbar/>
+                <div className='app-wrapper-content'>
+                    <Route path='/dialogs'
+                           render={() => <DialogsContainer/>}/>
 
-                <Route path='/profile/:userId?'
-                       render={() => <ProfileContainer /> }/>
+                    <Route path='/profile/:userId?'
+                           render={() => <ProfileContainer/>}/>
 
-                <Route path='/users'
-                       render={() => <UsersContainer /> }/>
+                    <Route path='/users'
+                           render={() => <UsersContainer/>}/>
 
-                <Route path='/login'
-                       render={() => <LoginPage /> }/>
+                    <Route path='/login'
+                           render={() => <LoginPage/>}/>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
-}
+
 const mapStateToProps = (state) => ({
-    initialized:state.app.initialized
+    initialized: state.app.initialized
 })
 
 export default compose(
