@@ -6,7 +6,7 @@ let Users = ({currentPage, totalUsersCount, pageSize, onPageChanged, users, ...p
 
     return <div>
 
-        //putting logic into a component Paginator.jsx
+       {/*putting logic into a component Paginator.jsx*/}
         <Paginator currentPage={currentPage} onPageChanged={onPageChanged}
                    totalUsersCount={totalUsersCount} pageSize={pageSize}/>
         <div>

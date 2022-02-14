@@ -24,14 +24,12 @@ export const usersAPI = {
         return instance.delete(`follow/${userId}`)
     },
     getProfile(userId) {
-        console.warn('Obsolete method. Please profileAPI object')
         return profileAPI.getProfile(userId)
     }
 }
 
 export const profileAPI = {
     getProfile(userId) {
-        console.warn('Obsolete method. Please profileAPI object')
         return instance.get(`profile/` + userId);
     },
     getStatus(userId) {

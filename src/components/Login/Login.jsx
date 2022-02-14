@@ -10,7 +10,7 @@ import style from "./../common/FormsControls/FormsControls.module.css"
 const LoginForm = ({handleSubmit, error}) => {
     return (
         <form onSubmit={handleSubmit}>
-            //Making a field in a component FormsControls.js
+           {/*Making a field in a component FormsControls.js*/}
             {createField("Email", "email", [required], Input)}
             {createField("Password", "password", [required], Input, {type: "password"})}
             {createField(null, "rememberMe", [], Input, {type: "checkbox"}, "remember me")}

@@ -23,14 +23,13 @@ const usersReducer = (state = initialState, action) => {
         case FOLLOW:
             return {
                 ...state,
-                //making it into an auxiliary function object-helpers
+                // making it into an auxiliary function object-helpers
                 users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
-
             }
         case UNFOLLOW:
             return {
                 ...state,
-                //making it into an auxiliary function object-helpers
+                // making it into an auxiliary function object-helpers
                 users: updateObjectInArray(state.users, action.userId, "id", {followed: false})
             }
         case SET_USERS: {
@@ -57,7 +56,6 @@ const usersReducer = (state = initialState, action) => {
             return state;
     }
 }
-
 
 export const followSuccess = (userId) => ({type: FOLLOW, userId})
 export const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId})
@@ -95,12 +93,13 @@ const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) =>
 
 export const follow = (userId) => {
     return async (dispatch) => {
-       await followUnfollowFlow(dispatch, userId, usersAPI.follow.bind(usersAPI), followSuccess);
+        await followUnfollowFlow(dispatch, userId, usersAPI.follow.bind(usersAPI), followSuccess);
     }
 }
+
 export const unfollow = (userId) => {
     return async (dispatch) => {
-       await followUnfollowFlow(dispatch, userId, usersAPI.unfollow.bind(usersAPI), unfollowSuccess);
+        await followUnfollowFlow(dispatch, userId, usersAPI.unfollow.bind(usersAPI), unfollowSuccess);
     }
 }
 
