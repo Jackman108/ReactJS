@@ -2,6 +2,7 @@
   "name": "react-way-of-samurai",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jackman108.github.io/ReactJS/",
   "dependencies": {
     "axios": "^0.24.0",
     "classnames": "^2.3.1",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll --testMatch **/src/**/*.test.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
@@ -32,6 +35,7 @@
     "@types/react-dom": "^17.0.11",
     "eslint": "7.14.0",
     "eslint-plugin-react": "^7.28.0",
+    "gh-pages": "^3.2.3",
     "react-test-renderer": "17.0.2",
     "typescript": "^4.5.5"
   }
