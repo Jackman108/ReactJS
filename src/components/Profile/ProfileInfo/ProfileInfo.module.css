@@ -1,12 +1,34 @@
 .descriptionBlock {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainPhoto {
     max-width: 200px;
-
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .contact {
     padding-left: 10px;
+}
+.buttonChange {
+    width: 220px;
+    background-color: #7F9CCB;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-size: 0.8rem;
+    height: auto;
+}
+
+.buttonChange:hover {
+    background-color: #2D5BA3;
+    color: white;
+}
+
+.buttonChange:active {
+    background-color: #0D3F8F;
+    color: white;
 }
