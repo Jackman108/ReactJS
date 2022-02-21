@@ -1,18 +1,39 @@
 .header {
+    display: flex;
+    box-sizing: border-box;
     grid-area: h;
-    background-color: rgba(255, 237, 116, 0.87);
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #151515;
+
 }
 
 .header img {
+    display: flex;
+    align-items: center;
     width: 60px;
 }
 
 .loginBlock {
     float: right;
-
+    color: #e9f9ee;
+    padding: 15px 15px;
+    font-size: 18px;
 }
+
+.loginBlock:hover {
+    float: right;
+    color: #beedbf;
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
 .loginBlock a {
-    color: #025a3a;
-
+    color: #164d21;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
 }
-

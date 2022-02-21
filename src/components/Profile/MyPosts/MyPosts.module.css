@@ -1,7 +1,9 @@
 .postsBlock {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
 }
 
 .posts {
-    margin-top: 10px;
+    padding: 40px;
 }

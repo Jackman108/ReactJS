@@ -1,6 +1,6 @@
 .nav {
     grid-area: n;
-    background-color: burlywood;
+    background-color: #b8bfc2;
     padding: 20px;
 }
 
@@ -9,6 +9,11 @@
     text-decoration: none;
 }
 
+.item a:hover {
+    color: #525c60;
+    text-decoration: none;
+}
+
 .item a.activeLink {
-    color: gold;
+    color: #282d2f;
 }

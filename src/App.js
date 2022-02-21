@@ -1,7 +1,7 @@
 import React, {Component, lazy} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, Route, withRouter, Redirect, Switch} from "react-router-dom";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginPage from "./components/Login/Login";
@@ -12,9 +12,9 @@ import {initializeApp} from "./redux/app-reducer";
 import store from "./redux/redux-store";
 import withSuspense from "./hoc/withSuspense";
 
-const DialogsContainer = lazy(() => import('./components/Dialogs/DialogsContainer'));
-const ProfileContainer = lazy(() => import('./components/Profile/ProfileContainer'));
 
+const DialogsContainer = lazy(() => import('./components/Dialogs/DialogsContainer'));
+const ProfileContainer = lazy(() => import('./components/Profile/ProfileContainer'))
 
 
 class App extends Component {
@@ -32,18 +32,26 @@ class App extends Component {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
+                    <Switch>
+                        <Route exact path="/">{this.props.initialized ? <Redirect to="/profile"/> :
+                            <LoginPage/>}</Route>
 
-                    <Route path='/dialogs'
-                           render={withSuspense(DialogsContainer)}/>
+                        <Route path='/dialogs'
+                               render={withSuspense(DialogsContainer)}/>
 
-                    <Route path='/profile/:userId?'
-                           render={withSuspense(ProfileContainer)}/>
+                        <Route path='/profile/:userId?'
+                               render={withSuspense(ProfileContainer)}/>
 
-                    <Route path='/users'
-                           render={() => <UsersContainer/>}/>
+                        <Route path='/users'
+                               render={() => <UsersContainer/>}/>
 
-                    <Route path='/login'
-                           render={() => <LoginPage/>}/>
+                        <Route path='/login'
+                               render={() => <LoginPage/>}/>
+
+                        <Route path='*'
+                               render={() => <div>404 NOT FOUND</div>}/>
+                    </Switch>
+
                 </div>
             </div>
         )
