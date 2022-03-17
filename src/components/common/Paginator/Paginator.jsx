@@ -4,7 +4,7 @@ import cn from "classnames";
 
 let Paginator = ({totalItemsCount, currentPage, pageSize, onPageChanged, portionSize = 10}) => {
 
-    useEffect(()=>setPortionNumber(Math.ceil(currentPage/portionSize)), [currentPage]);
+    useEffect(() => setPortionNumber(Math.ceil(currentPage / portionSize)), [currentPage]);
     let pagesCount = Math.ceil(totalItemsCount / pageSize);
 
     let pages = [];
@@ -14,12 +14,14 @@ let Paginator = ({totalItemsCount, currentPage, pageSize, onPageChanged, portion
 
     let portionCount = Math.ceil(pagesCount / portionSize);
     let [portionNumber, setPortionNumber] = useState(1);
-    let leftPortionPageNumber = (portionNumber -1) * portionSize +1;
+    let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
     let rightPortionPageNumber = portionNumber * portionSize;
 
-        return <div className={cn(styles.paginator)}>
-            {portionNumber > 1 &&
-            <button onClick={() => {setPortionNumber(portionNumber - 1) }}>BACK</button>}
+    return <div className={cn(styles.paginator)}>
+        {portionNumber > 1 &&
+        <button onClick={() => {
+            setPortionNumber(portionNumber - 1)
+        }}>BACK</button>}
 
         {pages
             .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
@@ -32,10 +34,11 @@ let Paginator = ({totalItemsCount, currentPage, pageSize, onPageChanged, portion
                                  onPageChanged(p);
                              }}>{p}</span>
             })}
-            {portionCount >portionNumber &&
-                <button onClick={() => {setPortionNumber(portionNumber + 1) }}>NEXT</button> }
-        </div>
-
+        {portionCount > portionNumber &&
+        <button onClick={() => {
+            setPortionNumber(portionNumber + 1)
+        }}>NEXT</button>}
+    </div>
 
 
 }
