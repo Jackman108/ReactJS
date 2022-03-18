@@ -4,9 +4,11 @@
   "private": true,
   "homepage": "https://jackman108.github.io/ReactJS/",
   "dependencies": {
+    "@types/classnames": "^2.3.1",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "@types/react-form": "^4.0.2",
+    "@types/react-redux": "^7.1.23",
     "@types/redux-form": "^8.3.3",
     "axios": "^0.24.0",
     "classnames": "^2.3.1",
